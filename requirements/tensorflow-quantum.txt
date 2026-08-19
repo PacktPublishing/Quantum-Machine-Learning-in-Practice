@@ -1,0 +1,10 @@
+# TensorFlow Quantum environment. Keep this separate from other deep learning stacks.
+# TensorFlow Quantum 0.7.6 publishes supported wheels for Linux x86_64 only.
+-r base.txt
+tensorflow==2.18.1; sys_platform == "linux" and platform_machine == "x86_64"
+tf-keras==2.18.0; sys_platform == "linux" and platform_machine == "x86_64"
+tensorflow-quantum[and-tensorflow]==0.7.6; sys_platform == "linux" and platform_machine == "x86_64"
+cirq-core==1.5.0; sys_platform == "linux" and platform_machine == "x86_64"
+jax==0.5.3; sys_platform == "linux" and platform_machine == "x86_64"
+jaxlib==0.5.3; sys_platform == "linux" and platform_machine == "x86_64"
+sympy==1.14.0; sys_platform == "linux" and platform_machine == "x86_64"

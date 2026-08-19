@@ -1,0 +1,4 @@
+# Cirq environment for circuit-level prototyping, simulation, and sweeps.
+-r base.txt
+cirq-core==1.5.0
+sympy==1.14.0

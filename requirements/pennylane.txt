@@ -1,0 +1,6 @@
+# PennyLane environment for differentiable QNodes and hybrid model loops.
+# Prefer official CPU-only PyTorch wheels; PyPI remains the fallback on macOS.
+--extra-index-url https://download.pytorch.org/whl/cpu
+-r base.txt
+pennylane==0.45.0
+torch==2.12.0

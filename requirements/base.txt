@@ -1,0 +1,12 @@
+# Base scientific environment for notebooks, preprocessing, baselines, and plots.
+numpy==2.0.2
+scipy==1.17.1
+pandas==2.3.3
+scikit-learn==1.8.0
+matplotlib==3.10.9
+seaborn>=0.13,<0.14
+jupyterlab>=4.4,<5
+ipykernel==7.2.0
+nbconvert>=7.16,<8
+nbclient>=0.10,<0.11
+tqdm==4.68.2
