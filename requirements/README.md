@@ -3,7 +3,10 @@
 These pip-compatible files mirror the base dependencies and optional extras in
 `pyproject.toml`. Use Python 3.12 and install one framework environment at a
 time. Start with the base scientific stack, then add the framework-specific
-file for the chapter you are running.
+file for the chapter you are running. See the README chapter/environment map.
+The tested interpreter is Python 3.12.13; the project supports Python 3.12 only.
+PennyLane additionally pins Autograd 1.8.0 and Lightning 0.45.0; the Cirq and
+TFQ profiles include Cirq Google 1.5.0, matching Appendix IV.
 
 ```bash
 python3.12 -m venv .venv
