@@ -1,0 +1,167 @@
+{
+  "chapter01.ipynb": {
+    "profile": "base",
+    "listing_sha256": [
+      "81fbcbcf701e720299fb480ec5a6596167d4f70bc4965603f2d86223fa31679b",
+      "1e25ae9afd69e9792f3b9ae76408d08f27c4277ec241e06a2b8b77c8799d9c94",
+      "b0238d1bce71bffd3a033f40c54a63f772481f5ee62b0ec194b447caabf56209"
+    ]
+  },
+  "chapter02.ipynb": {
+    "profile": "base",
+    "listing_sha256": [
+      "2fd7fb1c36dc2902defc6d1dbd41dbc3fe39266729ac8db031bc6536eebafef3",
+      "0439b9e2d29822c3e44914560cd272fdf3fe7a8460e4e645c060a22f17862420",
+      "b124e8750b57ad857c85f10cf988261f13d6e15b7f9232268f7699e9609d064b",
+      "5311f5ffa88aca0c87270dcb7e87258e1b76e9da5307bdc427ffdabc7a25259e",
+      "b4ae9fb4d29bc7ad44ee6ed3d57686c34bb20bf7d6e6e809a21d6b5a69cb1f08"
+    ]
+  },
+  "chapter03.ipynb": {
+    "profile": "base",
+    "listing_sha256": [
+      "2bf4a51b43125bbd09799e523f3f3d30d270d535778aa9319b9d30c29b5e62d7",
+      "753467db9732e3f214bb7a6b9c5e00ec3c97bb24ea00366d8955c0ed1b91125e",
+      "cda2eea6080b1692a9701183943586921fbd474bedf3f7ceb7fbebfb99c78c8f"
+    ]
+  },
+  "chapter04.ipynb": {
+    "profile": "base",
+    "listing_sha256": [
+      "75257feebbb34f69c9870fa27dcae71a1e791db6209cb2c41505df40f5d88adb",
+      "e2ea33e725897bac56f11c0f3ce4f08742e2b3250f6b7cbdeca4da2c3781c7b8",
+      "d5142d0cab1621eea65d537c9c8fc7a8db5a0ca5ab35b5c719d3e40b8735c2fc",
+      "73e7ed847200a4a218f0c7b904d87f757ec610a1d21b666d8daa20111bc5e365"
+    ]
+  },
+  "chapter05.ipynb": {
+    "profile": "pennylane",
+    "listing_sha256": [
+      "479f9ec981c222965a6269ac3c93e950a837021a46cb8485816e0ac8630518d8",
+      "dcf8c4bb320c78a906ed59c486978535a288ed4728d47ae8c82d0e679f739cf3",
+      "d4b61608b1ce43bc93c30cf1f2b5cec70f8daec3cdf30fa594c3c6f0185b847f",
+      "d93548b3e63b687cf66f077f3a1fed0b48a91aa65c840a9c177988e1d538cb88",
+      "39abda22a6d391cb34007a84e1c74610dfcf6f0c14376b85dc3cfd856f26ad0f",
+      "de85940fd09d1a2c0e4438c78229b85bb5f7ec10183e265fbd185d5226cd68a1",
+      "ce200f9326044d914a92657c11101b5bf001158cb737f00ad1aa50f13fb397e7",
+      "f941b67fc23d2685fb98a1442c32c6a0d5a8d74f44593f9900c2a311658fa246"
+    ]
+  },
+  "chapter06.ipynb": {
+    "profile": "qiskit",
+    "listing_sha256": [
+      "642e27bf11595ed68cdb9cbd8a77cce018369ee6395e987786d25fe33a5e3b90",
+      "ec85143cead9774d8ae4626e6bc473d02f971633f27938a1f3ade9b6ae0ac40f",
+      "ef335440fd3d8b4de58e49ca29e80d7ca5b42e5544165ba19f0cf3d66f152828",
+      "85213fc086835ae725dc9d4062665a42801573b1fe08e156e6cb98fad06741dd",
+      "536e1537df1697c7dbef0510fd5aa3fa075190f09218a6badf5ca1a83998e8ca",
+      "33c04a1150b37a4c13c07dcc938161e8d845809721dcd20ee1a26626a9da533b",
+      "437a453fa3e137e242cf64fe054edd2ebff77d8d098332c76b7a44b7dd781759"
+    ]
+  },
+  "chapter07.ipynb": {
+    "profile": "tfq",
+    "listing_sha256": [
+      "7cc3287023bf7f1bd4d364b90f91f8c4c5dd690adb0b57034e188308fcfa8d3f",
+      "fd17f3afcea00692a6efae209be010a4d4ae4168032d0488b0718cc0473ef2a4",
+      "5e63846ad961fcea384d221fb60735aff0fc6a1395dba387d5f78ec193c62e37",
+      "b4314d2a7b3662975bb34c8d531af8e151eae53197073d39df688073f7b1c414",
+      "b1e2435912fabbd55b04642d09410866fdb7c17ab76ae453cd8a9b0b8230c3ca",
+      "36d67f3a52f08643deabb370981199fbc78b03e393b78bb777f69a9101f331ec",
+      "b883928eb16311685ef0d6233cea230635b9b93f326eec7daa4709e59330cb79"
+    ]
+  },
+  "chapter08.ipynb": {
+    "profile": "cirq",
+    "listing_sha256": [
+      "dc98f82780553bc0a87bec91aa36a25f948a1001d69f584f6e733eeed1d737d5",
+      "8bdfbd67a896295c4a134f03e444ac23832b874cb380e756870102d2ac2ffc5e",
+      "673f700c86ff007ccb3b2141ed4059e7341ec8d743f6cf8271304a9e1cd57487",
+      "3e8acff37abb91f33a9552d8739f73b9203fe0a435b9dbcebb1d355d48268008",
+      "3e95085ffe7c3479357030961609ed7ed11f725a92f4e63e1dec22ccd483b8a7",
+      "88b0c9d35e335b651fee72a5e8c52d021cb133782472513ae790d82d423d51f2",
+      "ebc4719ce5cf56bf347d7397fa259bde19be9a1089ec76717f0d38386fe9d80d"
+    ]
+  },
+  "chapter09.ipynb": {
+    "profile": "qiskit",
+    "listing_sha256": [
+      "ca6b80de8268e8120106d4b1a0b5607e629e33f91dc5d75748419863d8c6e856",
+      "8fe8d5ab5e15776d428a398eda8c4d649863411ec00e739b38ffc703ce412d5a",
+      "43dd46b7777d5e7f2f4fc20826b8c2f006469cabc6117dfbea437b533e9428bb",
+      "4e13be7a46a7b7d59beefdc2df358acc9608066e1b1b9ca1837daa5d351fa39f",
+      "f619aca44e583734731ed5c5a746ee4b743fde6fa6af46c5a42562fbc99dad80"
+    ]
+  },
+  "chapter10.ipynb": {
+    "profile": "pennylane",
+    "listing_sha256": [
+      "dd33217c3551f285ac381cdcceb5ee059e342e26fdbc95d516d7ff2048f93702",
+      "069b89fb1c2303dcaf95dd3bdcff37c2304824432bc2aa85e383707a08a29485",
+      "50096d3b989413fcf185cc2343f304dbd5e96732b8ce22423a4f42253dccca1a",
+      "9fa8de9fd78d2b729b425e4ca08c83de5da2e6ed7e70e0c1030fb429c0106ece",
+      "3b0a9d81388d84880f96c357c6b8ea9fca1ea024160d1c076a34a4ff7e1d4a0c",
+      "ead9d414672250ca57012c2800e696b3f7bce63d0f790f9184cb401b6c4a7427",
+      "45cd893109450988bf6a43907718c83d17f748d861ed81ce5fa919f073813e32",
+      "926c4cebf11f1dea2f3ecb8818d30604104e4a14f5bcec480ae7a72167656c0f"
+    ]
+  },
+  "chapter11.ipynb": {
+    "profile": "base",
+    "listing_sha256": [
+      "579580da035630820169bf5c1e7993389b0862585a5819448467e6973663459d",
+      "030dd580286f2c42d4bd5d0fa4b3ee1f6ad2b02e5f1beeb171962bb5809e4ae4",
+      "a46e9faf94dbab47dde252845cd29e2f99a9f5e68ae562252e20838a332b6582"
+    ]
+  },
+  "chapter12.ipynb": {
+    "profile": "pennylane",
+    "listing_sha256": [
+      "bcbed7973ae61f61cd150f83a34155562242d5a0078b968fc647ebed2a556ac6",
+      "c659f347433c6fe0e0f9d523b323e7ab25576506034efdf366c52ac569ca8b9e",
+      "d632028f075078428082506dd78a81671e0c8fed4ac8c8dab85001c99e68d6cf",
+      "189e2dbc3461697fb15897052c5f67a19c1f9b038008c920c56e35e7424bb54f",
+      "e1ab4b25c3a357eb691ad903ad9c9af271662a1c5540f6a71aa1d8cc0e9aff31",
+      "3487486cfd63be940699598422c9d5491608ca06be4a76632c233cf657f0e34f"
+    ]
+  },
+  "chapter13.ipynb": {
+    "profile": "base",
+    "listing_sha256": [
+      "cf7f37fe0f344ab0debfeb8137b1d3389004080e4a8e58b5d7e3b47f7aaf7258",
+      "a7e00b081cb8eb392dc816f99616c9d010fc115078e11c00abc421c75924f94b",
+      "07048fcf52538153cc2614eac2af6c158ea8c8f5ff7a731a660d7f46e83ff2f6",
+      "7702b7ebe1eeedc0e762b0fdb450903b683fe8e0c4f228a9aaad1dac9fefae9f",
+      "c64ec705826f9f52cd8233cd780a9609b6f720e1c2790c685bbdc4d4510d96b5"
+    ]
+  },
+  "chapter14.ipynb": {
+    "profile": "qiskit",
+    "listing_sha256": [
+      "0b89c75a8498747f717ef5f2263695c30f00b2c28a5e39d2cff707e70ab5543a",
+      "c7ef827d2516626ffa1eca4dce18c086589d092f8e14df3ce9e63dca7ecc283c",
+      "2b4b6870ae5095928cee81e1b6c21fcaba0a8eccff2d95c8c76721de2cad9f74",
+      "b73dc38500855908775132340e18eb824c497cb68dd27cb6051fdc89e11b3313",
+      "a3eecf91451d6d63eb30d3c84088f893244f1aef7e2d454348e99449427df98b",
+      "8ac78ac423938bd9f15d83282a6fb2471d8a3026e125ec037c1f4a74cf35389f"
+    ]
+  },
+  "appendixI.ipynb": {
+    "profile": "base",
+    "listing_sha256": [
+      "6b7506463473d340d9d708ae59921a22863d8fec88070f7f5f3109c561693587"
+    ]
+  },
+  "appendixII.ipynb": {
+    "profile": "base",
+    "listing_sha256": [
+      "c47fbcf69d9d37392ce1469925f559efd9a5aab058f1502bba74f8307df08c2d"
+    ]
+  },
+  "appendixIII.ipynb": {
+    "profile": "base",
+    "listing_sha256": [
+      "6e3a4182181375c660e71d7715ec95be682d8efab7a2bffecfbdc1492bd50d2a"
+    ]
+  }
+}

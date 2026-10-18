@@ -16,6 +16,7 @@ environment files, smoke tests, and folders for data and experiment artifacts.
   baselines.
 - `requirements/` contains pip-compatible environment files split by framework.
 - `scripts/smoke_test.py` checks imports and minimal framework functionality.
+- `scripts/check_notebooks.py` verifies listing sources and optionally runs notebooks.
 - `scripts/record_environment.py` records package, platform, and dependency-check
   output after an environment works.
 - `data/raw/` and `data/processed/` separate source data from derived data.
@@ -42,9 +43,12 @@ The most useful habit is to keep an experiment log beside the notebook. Record
 the dataset, preprocessing, random seed, circuit family, simulator or backend,
 shot count, package environment, baseline results, and final test metric.
 
-Cells tagged `Listing X.Y` reproduce the corresponding book code blocks
-verbatim. Separately tagged `Setup` and `Test` cells are execution scaffolding,
-not part of the listing.
+Cells tagged `Listing X.Y` reproduce the final book code blocks in chapter order.
+Appendix cells tagged `Test` provide additional checks. The listing manifest
+records the final source hashes so synchronization can be checked without access
+to the manuscript. The release notebooks start with cleared outputs. Run the
+cells to reproduce the book examples; timings and some sampled values can vary
+across platforms and reruns.
 
 ## Notebook map
 
@@ -62,20 +66,37 @@ not part of the listing.
 | Chapter 10: Generative Modeling with Quantum Circuits | `notebooks/chapter10.ipynb` |
 | Chapter 11: Benchmarking, Evaluation, and When Classical ML Wins | `notebooks/chapter11.ipynb` |
 | Chapter 12: End-to-End Mini Project | `notebooks/chapter12.ipynb` |
+| Chapter 13: Information-Theoretic and Privacy Perspectives | `notebooks/chapter13.ipynb` |
+| Chapter 14: Beyond Simulation: Hardware and the Road Ahead | `notebooks/chapter14.ipynb` |
 | Appendix I: Linear Algebra Refresher | `notebooks/appendixI.ipynb` |
 | Appendix II: Probability and Expectation Values | `notebooks/appendixII.ipynb` |
 | Appendix III: Optimization and Gradients | `notebooks/appendixIII.ipynb` |
 
+## Choose the environment for your chapter
+
+| Environment | Notebooks |
+| --- | --- |
+| Base scientific stack | Chapters 1–4, 11, 13; Appendices I–III |
+| `pennylane` | Chapters 5, 10, 12 |
+| `qiskit` | Chapters 6, 9, 14 |
+| `tfq` | Chapter 7 (Linux x86_64) |
+| `cirq` | Chapter 8 |
+
+The pinned Autograd, Lightning, and Cirq Google versions match the tested book
+setup. Use the framework profiles and CPU-only PyTorch configuration below.
+Keep TensorFlow Quantum in its own environment.
+
 ## Recommended setup: uv
 
-The repository pins Python 3.12 and provides a committed `uv.lock`. Install the
-base notebook and classical-ML environment from the repository root. This is
-the lock, smoke-test, and environment-recording workflow used in Appendix IV.
+The repository pins the tested Python 3.12.13 interpreter and provides a committed
+`uv.lock`. Install the base notebook and classical-ML environment from the
+repository root. This is the lock, smoke-test, and environment-recording workflow
+used in Appendix IV.
 If needed, install or update uv using its
 [official installation guide](https://docs.astral.sh/uv/getting-started/installation/).
 
 ```bash
-uv python install 3.12
+uv python install 3.12.13
 uv sync --locked
 uv run --locked python scripts/smoke_test.py --framework base --strict
 uv run --locked jupyter lab
@@ -191,3 +212,48 @@ are software diagnostics, not evidence for or against a modeling claim.
 Most examples are simulator-first. If you use a remote provider, keep API tokens
 out of notebooks, source files, figures, and logs. Record non-secret job and
 calibration metadata needed to interpret the run.
+
+## Verify the notebooks
+
+Check the notebook inventory, Python syntax, saved errors, and exact listing
+hashes without importing quantum frameworks:
+
+```bash
+uv run --locked python scripts/check_notebooks.py
+```
+
+Execute a profile with a fresh Jupyter kernel and temporary working directory for
+each notebook. Use the same extra as the environment being tested:
+
+```bash
+uv run --locked python scripts/check_notebooks.py --profile base --execute
+uv run --locked --extra pennylane python scripts/check_notebooks.py --profile pennylane --execute
+uv run --locked --extra qiskit python scripts/check_notebooks.py --profile qiskit --execute
+uv run --locked --extra cirq python scripts/check_notebooks.py --profile cirq --execute
+uv run --locked --extra tfq python scripts/check_notebooks.py --profile tfq --execute
+```
+
+These checks leave the source notebooks unchanged. The capstone and framework
+training examples can take several minutes. Their documented numerical checks
+run as part of execution; runtime and memory measurements are machine-dependent.
+
+Release validation on 2026-10-18 passed all 17 notebooks on Linux x86_64 with
+Python 3.12.13, using a separate locked environment for each profile. All five
+profiles also passed the strict smoke tests and dependency consistency checks.
+
+## Final chapters and generated records
+
+Chapter 12 writes `chapter12_results.json`; Chapter 14 writes per-job JSON files
+and `summary.json` in `chapter14_results/`. These paths are relative to the
+kernel's working directory, normally `notebooks/` when opened in JupyterLab.
+They are ignored by Git. Archive them under `results/experiments/` for a run you
+want to retain, and start Chapter 14 in a fresh working directory for each
+independent run.
+
+Chapter 13 uses a fixed classifier to audit representations, readouts,
+interpretability, and privacy calculations. It does not release private data.
+Chapter 14's default execution is entirely local and records physical hardware
+as `not_run`. Its optional provider adapter requires a separately configured
+account, backend, and sampler. The book and notebook do not claim that this
+optional path was validated on a physical device; inspect the saved job ID after
+any retrieval failure before considering another submission.
